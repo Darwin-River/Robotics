@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerProject Template="No" Version="2.0" Identifier="1E462B4C-273C-46B5-849D-4062E9F7ED02" Creator="SCRWIN-3.1.4.0" Device="ExMachinis" Modified="2023-02-02 19:26:38 -0500" ModID="DBE02BBD-2D5B-4780-99F2-B3D195FDF059">
+    <Binder>
+        <BinderItem UUID="7D3316ED-1F85-4792-A533-B743F80AFB1F" Type="DraftFolder" Created="2023-02-01 18:15:11 -0500" Modified="2023-02-01 18:15:11 -0500">
+            <Title>Draft</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="D91776D9-4F60-4080-B3BF-8B0A2115E4FA" Type="Folder" Created="2023-02-01 18:15:40 -0500" Modified="2023-02-01 18:15:47 -0500">
+                    <Title>Rules</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="7F9DC9E1-E48F-46AC-B0D6-07DE30989900" Type="Text" Created="2023-02-01 18:17:38 -0500" Modified="2023-02-02 19:24:08 -0500">
+                            <Title>Basic Rules</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>210,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="74DCD1C0-024C-4476-BDF1-1CE2C2EE92BC" Type="Folder" Created="2023-02-01 18:15:52 -0500" Modified="2023-02-01 18:15:55 -0500">
+                    <Title>Parts</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <CorkboardAndOutliner>
+                        <SelectedSubdocumentUUIDs>5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080</SelectedSubdocumentUUIDs>
+                        <CorkboardSettings>
+                            <Arrangement>Linear</Arrangement>
+                        </CorkboardSettings>
+                    </CorkboardAndOutliner>
+                    <Children>
+                        <BinderItem UUID="B375DAF0-C661-4FB6-BEB2-E888B72AABF9" Type="Text" Created="2023-02-01 18:20:20 -0500" Modified="2023-02-01 18:20:42 -0500">
+                            <Title>Arduino Mini</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="D5AA492F-A959-4287-8671-74A9AF063B08" Type="Text" Created="2023-02-01 18:20:52 -0500" Modified="2023-02-01 18:21:14 -0500">
+                            <Title>IO Shield</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="FBD5A1F1-EF30-4EB9-A6D8-BE1541BFB9BA" Type="Text" Created="2023-02-01 18:21:23 -0500" Modified="2023-02-01 18:21:43 -0500">
+                            <Title>Continuous motion servos</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="734A7F42-5490-4AF9-AE5D-4212440E65CC" Type="Text" Created="2023-02-01 18:21:51 -0500" Modified="2023-02-01 18:22:08 -0500">
+                            <Title>Battery holder</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="3252A844-369A-4983-A315-8BD633B15CC5" Type="Text" Created="2023-02-01 18:22:36 -0500" Modified="2023-02-01 18:22:49 -0500">
+                            <Title>Photodiodes</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="51E7AD10-2DF7-4D2E-803E-044C63A1EAED" Type="Text" Created="2023-02-01 18:23:35 -0500" Modified="2023-02-01 18:23:49 -0500">
+                            <Title>Wire connectors</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080" Type="Text" Created="2023-02-02 19:26:15 -0500" Modified="2023-02-02 19:26:36 -0500">
+                            <Title>Microphone</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="E0473435-9477-40EA-8AC1-9534DE8A3E85" Type="Folder" Created="2023-02-01 18:16:00 -0500" Modified="2023-02-01 18:16:04 -0500">
+                    <Title>Prints</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="262B0DC4-0BB4-4CA3-B237-5CFDDAE43A8D" Type="Folder" Created="2023-02-01 18:16:12 -0500" Modified="2023-02-01 18:16:18 -0500">
+                    <Title>Assemblies</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="9E3CEDD1-0D29-41C1-93F9-DAA7C9700D43" Type="Folder" Created="2023-02-01 18:16:51 -0500" Modified="2023-02-01 18:16:58 -0500">
+                    <Title>Codes</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="8D3CDBBF-7024-4F9B-B487-27454E76D62A" Type="Text" Created="2023-02-01 18:24:26 -0500" Modified="2023-02-01 18:58:46 -0500">
+                            <Title>Test Code</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>111,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="4CDF7E33-E459-4CC0-AE7F-0F2FAC0AD138" Type="ResearchFolder" Created="2023-02-01 18:15:11 -0500" Modified="2023-02-01 18:15:11 -0500">
+            <Title>Research</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+        </BinderItem>
+        <BinderItem UUID="49E7AA56-EDB9-4041-9896-4C64194A88DD" Type="TrashFolder" Created="2023-02-01 18:15:11 -0500" Modified="2023-02-01 18:15:11 -0500">
+            <Title>Trash</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="6DC39BCD-CE2D-4F50-A0D7-F00E9FC4681F" Type="Folder" Created="2023-02-01 18:16:25 -0500" Modified="2023-02-01 18:16:25 -0500">
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="E37287BD-8D85-478C-850E-A92055739EF1" Type="Text" Created="2023-02-01 18:15:11 -0500" Modified="2023-02-01 18:15:11 -0500">
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+    </Binder>
+    <Collections>
+        <Collection Type="Binder" ID="4EE00C34-B44C-4A79-992A-DF39834478BB" Color="0.941176 0.937255 0.956863">
+            <Title>Binder</Title>
+        </Collection>
+        <Collection Type="RecentSearch" ID="856D4FCF-11D9-4034-9C88-8E1422E92C44" Color="0.901961 0.901961 0.980392">
+            <Title>Search Results</Title>
+            <SearchSettings Operator="Any" Type="All" Scope="All" CompileSetting="All" CaseSensitive="No" IgnoreDiacritics="No"></SearchSettings>
+        </Collection>
+    </Collections>
+    <SectionTypes>
+        <TypeDefinitions>
+            <Type ID="804AE59C-E83A-48BD-9665-466B8956B93E">Heading</Type>
+            <Type ID="404A54C7-9EA3-4E8C-B3C7-BF231B9E4F9C">Sub-Heading</Type>
+            <Type ID="4CD3F10D-1259-4928-A729-DD23A8004F5D">Section</Type>
+        </TypeDefinitions>
+        <LevelTypes>
+            <Folders>
+                <Type>804AE59C-E83A-48BD-9665-466B8956B93E</Type>
+            </Folders>
+            <Containers>
+                <Type>4CD3F10D-1259-4928-A729-DD23A8004F5D</Type>
+            </Containers>
+            <Files>
+                <Type>4CD3F10D-1259-4928-A729-DD23A8004F5D</Type>
+            </Files>
+        </LevelTypes>
+    </SectionTypes>
+    <LabelSettings>
+        <Title>Label</Title>
+        <DefaultLabelID>-1</DefaultLabelID>
+        <Labels>
+            <Label ID="-1">No Label</Label>
+            <Label ID="0" Color="0.993500 0.701213 0.732586">Red</Label>
+            <Label ID="1" Color="0.995422 0.790951 0.652384">Orange</Label>
+            <Label ID="2" Color="0.997726 0.892729 0.652567">Yellow</Label>
+            <Label ID="3" Color="0.715862 0.948714 0.697688">Green</Label>
+            <Label ID="4" Color="0.702312 0.888273 0.974258">Blue</Label>
+            <Label ID="5" Color="0.957565 0.766751 0.999619">Purple</Label>
+        </Labels>
+    </LabelSettings>
+    <StatusSettings>
+        <Title>Status</Title>
+        <DefaultStatusID>-1</DefaultStatusID>
+        <StatusItems>
+            <Status ID="-1">No Status</Status>
+            <Status ID="0">To Do</Status>
+            <Status ID="1">In Progress</Status>
+            <Status ID="2">First Draft</Status>
+            <Status ID="3">Revised Draft</Status>
+            <Status ID="4">Final Draft</Status>
+            <Status ID="5">Done</Status>
+        </StatusItems>
+    </StatusSettings>
+    <ProjectTargets Notify="No">
+        <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-02-01 18:15:11 -0500" IgnoreDeadline="Yes">0</DraftTarget>
+        <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="Yes" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
+        <PreviousSession Words="24" Characters="111" Date="2023-02-02 19:26:38 -0500"/>
+    </ProjectTargets>
+    <RecentWritingHistory Date="2023-02-02 00:00:00 -0500">
+        <DraftWordCount>24</DraftWordCount>
+        <DraftCharCount>111</DraftCharCount>
+        <OtherWordCount>0</OtherWordCount>
+        <OtherCharCount>0</OtherCharCount>
+    </RecentWritingHistory>
+    <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="na-letter" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
+</ScrivenerProject>
