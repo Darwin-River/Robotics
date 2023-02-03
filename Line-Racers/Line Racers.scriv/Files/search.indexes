@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="262B0DC4-0BB4-4CA3-B237-5CFDDAE43A8D">
+            <Title>Assemblies</Title>
+        </Document>
+        <Document ID="3252A844-369A-4983-A315-8BD633B15CC5">
+            <Title>Photodiodes</Title>
+        </Document>
+        <Document ID="51E7AD10-2DF7-4D2E-803E-044C63A1EAED">
+            <Title>Wire connectors</Title>
+        </Document>
+        <Document ID="5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080">
+            <Title>Microphone</Title>
+            <Synopsis>The microphone is required to start the robot</Synopsis>
+        </Document>
+        <Document ID="6DC39BCD-CE2D-4F50-A0D7-F00E9FC4681F"/>
+        <Document ID="734A7F42-5490-4AF9-AE5D-4212440E65CC">
+            <Title>Battery holder</Title>
+        </Document>
+        <Document ID="74DCD1C0-024C-4476-BDF1-1CE2C2EE92BC">
+            <Title>Parts</Title>
+        </Document>
+        <Document ID="7F9DC9E1-E48F-46AC-B0D6-07DE30989900">
+            <Title>Basic Rules</Title>
+            <Text>1. Each player has a line following robot.
+2. The robots are placed on opposite sides of the arena.
+3. Clap your hands to start the robots racing.
+4. The first robot to get to the end of the path and back wins.</Text>
+        </Document>
+        <Document ID="8D3CDBBF-7024-4F9B-B487-27454E76D62A">
+            <Title>Test Code</Title>
+            <Text>This is a copy of the code that I’m using to develop and test the line following robot.
+
+/*
+Moves the servo
+*/
+
+#include &lt;Servo.h&gt;
+
+Servo myServo;
+
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  myServo.attach(9,600,2300);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN,HIGH);
+  myServo.write(0);
+  delay(1000);
+  digitalWrite(LED_BUILTIN,LOW);
+  myServo.write(90);
+  delay(1000);
+  myServo.write(180);
+  delay(1000);
+}
+</Text>
+        </Document>
+        <Document ID="9E3CEDD1-0D29-41C1-93F9-DAA7C9700D43">
+            <Title>Codes</Title>
+        </Document>
+        <Document ID="B375DAF0-C661-4FB6-BEB2-E888B72AABF9">
+            <Title>Arduino Mini</Title>
+        </Document>
+        <Document ID="D5AA492F-A959-4287-8671-74A9AF063B08">
+            <Title>IO Shield</Title>
+        </Document>
+        <Document ID="D91776D9-4F60-4080-B3BF-8B0A2115E4FA">
+            <Title>Rules</Title>
+        </Document>
+        <Document ID="E0473435-9477-40EA-8AC1-9534DE8A3E85">
+            <Title>Prints</Title>
+        </Document>
         <Document ID="E37287BD-8D85-478C-850E-A92055739EF1"/>
+        <Document ID="FBD5A1F1-EF30-4EB9-A6D8-BE1541BFB9BA">
+            <Title>Continuous motion servos</Title>
+        </Document>
     </Documents>
 </SearchIndexes>

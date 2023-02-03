@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="1E462B4C-273C-46B5-849D-4062E9F7ED02" Creator="SCRWIN-3.1.4.0" Device="ExMachinis" Modified="2023-02-02 19:26:38 -0500" ModID="DBE02BBD-2D5B-4780-99F2-B3D195FDF059">
+<ScrivenerProject Template="No" Version="2.0" Identifier="1E462B4C-273C-46B5-849D-4062E9F7ED02" Creator="SCRWIN-3.1.4.0" Device="ExMachinis" Modified="2023-02-03 08:19:01 -0500" ModID="75F47958-660B-4F2A-8769-0EB663C432CF">
     <Binder>
         <BinderItem UUID="7D3316ED-1F85-4792-A533-B743F80AFB1F" Type="DraftFolder" Created="2023-02-01 18:15:11 -0500" Modified="2023-02-01 18:15:11 -0500">
             <Title>Draft</Title>
@@ -35,12 +35,6 @@
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
-                    <CorkboardAndOutliner>
-                        <SelectedSubdocumentUUIDs>5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080</SelectedSubdocumentUUIDs>
-                        <CorkboardSettings>
-                            <Arrangement>Linear</Arrangement>
-                        </CorkboardSettings>
-                    </CorkboardAndOutliner>
                     <Children>
                         <BinderItem UUID="B375DAF0-C661-4FB6-BEB2-E888B72AABF9" Type="Text" Created="2023-02-01 18:20:20 -0500" Modified="2023-02-01 18:20:42 -0500">
                             <Title>Arduino Mini</Title>
@@ -140,7 +134,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>111,0</TextSelection>
+                                <TextSelection>13,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -234,11 +228,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-02-01 18:15:11 -0500" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="Yes" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="24" Characters="111" Date="2023-02-02 19:26:38 -0500"/>
+        <PreviousSession Words="0" Characters="0" Date="2023-02-03 08:19:01 -0500"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2023-02-02 00:00:00 -0500">
-        <DraftWordCount>24</DraftWordCount>
-        <DraftCharCount>111</DraftCharCount>
+    <RecentWritingHistory Date="2023-02-03 00:00:00 -0500">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>0</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
