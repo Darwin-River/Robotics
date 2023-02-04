@@ -6,20 +6,34 @@
         </Document>
         <Document ID="3252A844-369A-4983-A315-8BD633B15CC5">
             <Title>Photodiodes</Title>
+            <Text>Photodiode
+
+UMLIFE 20PCS 5MM LDR Photosensitive Sensor Module Light Dependent Resistor Sensor Module Digital Light Detection LM393 3 pins for Arduino https://www.amazon.com/dp/B09NCXKW9B</Text>
         </Document>
         <Document ID="51E7AD10-2DF7-4D2E-803E-044C63A1EAED">
             <Title>Wire connectors</Title>
+            <Text>Wire connectors
+
+uxcell 10cm 2.54mm 3 Pin Female to Female F/F Jumper Cable Connector 5 Pcs https://www.amazon.com/dp/B00O9Y8HYO</Text>
         </Document>
         <Document ID="5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080">
             <Title>Microphone</Title>
             <Synopsis>The microphone is required to start the robot</Synopsis>
+            <Text>Microphone
+
+DAOKI 5PCS High Sensitivity Sound Microphone Sensor Detection Module for Arduino AVR PIC https://www.amazon.com/dp/B00XT0PH10</Text>
         </Document>
         <Document ID="6DC39BCD-CE2D-4F50-A0D7-F00E9FC4681F"/>
         <Document ID="734A7F42-5490-4AF9-AE5D-4212440E65CC">
             <Title>Battery holder</Title>
+            <Text>Battery holder
+
+Corpco 4 AA Battery Holder with 5.5x2.1mm Connector 6V Output 2 Pack https://www.amazon.com/dp/B07PXZZS6L</Text>
         </Document>
         <Document ID="74DCD1C0-024C-4476-BDF1-1CE2C2EE92BC">
             <Title>Parts</Title>
+            <Text>All electronics for this project use commercial off the shelf products that fit together without any need for soldering.
+</Text>
         </Document>
         <Document ID="7F9DC9E1-E48F-46AC-B0D6-07DE30989900">
             <Title>Basic Rules</Title>
@@ -62,19 +76,103 @@ void loop() {
         </Document>
         <Document ID="B375DAF0-C661-4FB6-BEB2-E888B72AABF9">
             <Title>Arduino Mini</Title>
+            <Text>Arduino Mini
+
+LAFVIN Nano V3.0, Nano Board ATmega328P 5V 16M Micro-Controller Board Compatible with Arduino IDE (Nano x 3 with USB Cable) https://www.amazon.com/dp/B07G99NNXL</Text>
         </Document>
         <Document ID="D5AA492F-A959-4287-8671-74A9AF063B08">
             <Title>IO Shield</Title>
+            <Text>IO Shield
+
+This printed circuit board has a width of approximately 1.75 mm.
+
+HiLetgo 5pcs Nano I/O Expansion Sensor Shield for Arduino UNO R1 Nano 3.0 Duemilanove 2009 https://www.amazon.com/dp/B07VQRCC8F</Text>
         </Document>
         <Document ID="D91776D9-4F60-4080-B3BF-8B0A2115E4FA">
             <Title>Rules</Title>
         </Document>
         <Document ID="E0473435-9477-40EA-8AC1-9534DE8A3E85">
             <Title>Prints</Title>
+            <Text>This section describes the 3D printed parts, which must either be printed on your own 3D printer or ordered from a custom printer at an affordable price.
+The scripts are provided as OpenSCAD source code, which can be rendered as STL files using the free OpenSCAD open source modeling software.
+You can download the software from https://openscad.org. There is also a convenient cheat sheet for using the simple scripting language at https://openscad.org/cheatsheet/index.html.
+
+Downloadable STL files are also available on Thingiverse.</Text>
         </Document>
         <Document ID="E37287BD-8D85-478C-850E-A92055739EF1"/>
+        <Document ID="F8855DF9-127E-44C3-8D2F-5BCE9DCFA4FB">
+            <Title>Chasis</Title>
+            <Text>The line following robot used in this challenge only requires a chassis and two wheels, which are described here.
+
+// Variables
+// All measurements are given in mm.
+
+cbLength = 54.1;
+cbWidth = 1.75;
+cbHeight = 58;
+
+servoLength = 22.6;
+servoWidth = 12.5;
+servoHeight = 17.5;
+
+servoWireWidth = 4.6;
+servoTerminalWidth = 10;
+servoTabThickness = 2.55;
+servoTabLength = 32.25;
+
+baseLength = 60;
+baseHeight = 60;
+baseWidth = servoTabLength;
+
+batteryLength = 91.5;
+batteryWidth =15;
+batteryHight = 58.5;
+
+// Execute
+
+rotate([90,0,0]) difference() {
+    base();
+    translate([0,0,baseHeight-10]) rotate([90,0,0]) cbCutout();
+    translate([-baseLength/2,0,baseHeight/2]) rotate([0,90,0]) rotate([0,0,90]) servoCutout();
+    translate([baseLength/2,0,baseHeight/2]) rotate([0,-90,0]) rotate([0,0,-90]) servoCutout();
+}
+
+// Modules
+
+module newCube(dim, off, loc, rot) {
+    translate(loc)
+    rotate(rot)
+        translate(off)
+            cube(dim);
+}
+
+module base() {
+    translate([0,0,baseHeight/2])
+        cube([baseLength, baseWidth, baseHeight], true);
+}
+
+module cbCutout() {
+    translate([0, 0, 0]) cube([cbLength, cbWidth, cbHeight], true);
+}
+
+module servoCutout() {
+    translate([0, 0, servoHeight/2 + servoTabThickness])
+    union() {
+        cube([servoLength, servoWidth, servoHeight], true);
+        cube([servoLength + 5, servoWireWidth, servoHeight], true);
+        translate([0,0,-(servoHeight+servoTabThickness)/2])
+            cube([servoTabLength, servoWidth, servoTabThickness], true);
+        translate([0,0,servoHeight/2])
+            rotate([0,90,0])
+                cylinder(h=100, r=servoTerminalWidth/2, center=true);
+    }
+}</Text>
+        </Document>
         <Document ID="FBD5A1F1-EF30-4EB9-A6D8-BE1541BFB9BA">
             <Title>Continuous motion servos</Title>
+            <Text>Continuous servo
+
+Feetech FS90R Analog Servo 360 Degree Continuous Rotation Micro RC Servo with Wheel for RC Car plane Robot (4 sets) https://www.amazon.com/dp/B07FVQBNTD</Text>
         </Document>
     </Documents>
 </SearchIndexes>

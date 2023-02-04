@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="1E462B4C-273C-46B5-849D-4062E9F7ED02" Creator="SCRWIN-3.1.4.0" Device="ExMachinis" Modified="2023-02-03 08:19:01 -0500" ModID="75F47958-660B-4F2A-8769-0EB663C432CF">
+<ScrivenerProject Template="No" Version="2.0" Identifier="1E462B4C-273C-46B5-849D-4062E9F7ED02" Creator="SCRWIN-3.1.4.0" Device="ExMachinis" Modified="2023-02-04 18:41:52 -0500" ModID="3837D41D-207F-457F-9AE8-1C2D2D90E143">
     <Binder>
         <BinderItem UUID="7D3316ED-1F85-4792-A533-B743F80AFB1F" Type="DraftFolder" Created="2023-02-01 18:15:11 -0500" Modified="2023-02-01 18:15:11 -0500">
             <Title>Draft</Title>
@@ -27,7 +27,7 @@
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="74DCD1C0-024C-4476-BDF1-1CE2C2EE92BC" Type="Folder" Created="2023-02-01 18:15:52 -0500" Modified="2023-02-01 18:15:55 -0500">
+                <BinderItem UUID="74DCD1C0-024C-4476-BDF1-1CE2C2EE92BC" Type="Folder" Created="2023-02-01 18:15:52 -0500" Modified="2023-02-04 09:58:13 -0500">
                     <Title>Parts</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -36,72 +36,72 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="B375DAF0-C661-4FB6-BEB2-E888B72AABF9" Type="Text" Created="2023-02-01 18:20:20 -0500" Modified="2023-02-01 18:20:42 -0500">
+                        <BinderItem UUID="B375DAF0-C661-4FB6-BEB2-E888B72AABF9" Type="Text" Created="2023-02-01 18:20:20 -0500" Modified="2023-02-04 09:46:23 -0500">
                             <Title>Arduino Mini</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>174,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="D5AA492F-A959-4287-8671-74A9AF063B08" Type="Text" Created="2023-02-01 18:20:52 -0500" Modified="2023-02-01 18:21:14 -0500">
+                        <BinderItem UUID="D5AA492F-A959-4287-8671-74A9AF063B08" Type="Text" Created="2023-02-01 18:20:52 -0500" Modified="2023-02-04 09:56:25 -0500">
                             <Title>IO Shield</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>10,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="FBD5A1F1-EF30-4EB9-A6D8-BE1541BFB9BA" Type="Text" Created="2023-02-01 18:21:23 -0500" Modified="2023-02-01 18:21:43 -0500">
+                        <BinderItem UUID="FBD5A1F1-EF30-4EB9-A6D8-BE1541BFB9BA" Type="Text" Created="2023-02-01 18:21:23 -0500" Modified="2023-02-04 09:49:32 -0500">
                             <Title>Continuous motion servos</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>170,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="734A7F42-5490-4AF9-AE5D-4212440E65CC" Type="Text" Created="2023-02-01 18:21:51 -0500" Modified="2023-02-01 18:22:08 -0500">
+                        <BinderItem UUID="734A7F42-5490-4AF9-AE5D-4212440E65CC" Type="Text" Created="2023-02-01 18:21:51 -0500" Modified="2023-02-04 09:55:12 -0500">
                             <Title>Battery holder</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection Caret="121">85,36</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="3252A844-369A-4983-A315-8BD633B15CC5" Type="Text" Created="2023-02-01 18:22:36 -0500" Modified="2023-02-01 18:22:49 -0500">
+                        <BinderItem UUID="3252A844-369A-4983-A315-8BD633B15CC5" Type="Text" Created="2023-02-01 18:22:36 -0500" Modified="2023-02-04 09:51:10 -0500">
                             <Title>Photodiodes</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>186,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="51E7AD10-2DF7-4D2E-803E-044C63A1EAED" Type="Text" Created="2023-02-01 18:23:35 -0500" Modified="2023-02-01 18:23:49 -0500">
+                        <BinderItem UUID="51E7AD10-2DF7-4D2E-803E-044C63A1EAED" Type="Text" Created="2023-02-01 18:23:35 -0500" Modified="2023-02-04 09:52:34 -0500">
                             <Title>Wire connectors</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>128,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080" Type="Text" Created="2023-02-02 19:26:15 -0500" Modified="2023-02-02 19:26:36 -0500">
+                        <BinderItem UUID="5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080" Type="Text" Created="2023-02-02 19:26:15 -0500" Modified="2023-02-04 09:53:50 -0500">
                             <Title>Microphone</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>137,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="E0473435-9477-40EA-8AC1-9534DE8A3E85" Type="Folder" Created="2023-02-01 18:16:00 -0500" Modified="2023-02-01 18:16:04 -0500">
+                <BinderItem UUID="E0473435-9477-40EA-8AC1-9534DE8A3E85" Type="Folder" Created="2023-02-01 18:16:00 -0500" Modified="2023-02-04 10:08:49 -0500">
                     <Title>Prints</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -109,6 +109,17 @@
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
+                    <Children>
+                        <BinderItem UUID="F8855DF9-127E-44C3-8D2F-5BCE9DCFA4FB" Type="Text" Created="2023-02-04 10:03:13 -0500" Modified="2023-02-04 18:41:09 -0500">
+                            <Title>Chasis</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>213,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
                 </BinderItem>
                 <BinderItem UUID="262B0DC4-0BB4-4CA3-B237-5CFDDAE43A8D" Type="Folder" Created="2023-02-01 18:16:12 -0500" Modified="2023-02-01 18:16:18 -0500">
                     <Title>Assemblies</Title>
@@ -228,11 +239,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-02-01 18:15:11 -0500" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="Yes" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2023-02-03 08:19:01 -0500"/>
+        <PreviousSession Words="440" Characters="3422" Date="2023-02-04 18:41:52 -0500"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2023-02-03 00:00:00 -0500">
-        <DraftWordCount>0</DraftWordCount>
-        <DraftCharCount>0</DraftCharCount>
+    <RecentWritingHistory Date="2023-02-04 00:00:00 -0500">
+        <DraftWordCount>440</DraftWordCount>
+        <DraftCharCount>3422</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
