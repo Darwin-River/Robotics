@@ -26,20 +26,22 @@ baseWidth = servoTabLength;
 
 // Execute
 
-rotate([-90,0,0]) difference() {
+rotate([0,0,0]) difference() {
     union() {
         base();
         translate([0,-baseWidth/2,16]) sphere(9);
+        translate([baseLength/2-20,baseWidth/2-15,baseHeight]) rotate([0,0,0]) hardPoint();
+        translate([-baseLength/2+20,baseWidth/2-15,baseHeight]) rotate([0,0,0]) hardPoint();
+        translate([0,baseWidth/2-8,baseHeight]) rotate([0,0,0]) hardPoint();
     }
     translate([0,-baseWidth/2+5,baseHeight/2+servoTerminalWidth/2+5]) rotate([90,0,0]) cbCutout();
     translate([-baseLength/2,0,baseHeight/2]) 
         rotate([0,90,0]) rotate([0,0,-90]) servoCutout();
     translate([baseLength/2,0,baseHeight/2]) 
         rotate([0,-90,0]) rotate([0,0,-90]) servoCutout();
-    translate([0,-baseWidth/2+5,batteryWidth/2+5]) rotate([-90,0,0]) batteryCutout();
-    translate([baseLength/2-20,baseWidth/2-15,baseHeight]) rotate([0,0,0]) pilotHole();
-    translate([-baseLength/2+20,baseWidth/2-15,baseHeight]) rotate([0,0,0]) pilotHole();
+    translate([0,-baseWidth/2+5,batteryWidth/2+5]) rotate([-90,0,0]) batteryCutout();    
 }
+
 
 // Modules
 
@@ -69,7 +71,7 @@ module servoCutout() {
         translate([-wireClearance,0,0]) cube([servoLength, servoWireWidth, servoHeight], true);
         translate([0,0,-(servoHeight+servoTabThickness)/2])
             cube([servoTabLength, servoWidth, servoTabThickness], true);
-        translate([servoLength/2-cylinderLength/2,0,servoHeight/2])
+        translate([0,0,servoHeight/2])
             rotate([0,90,0])
                 cylinder(h=cylinderLength, r=servoTerminalWidth/2, center=true);
     }
@@ -80,6 +82,28 @@ module batteryCutout() {
         cube([batteryLength,batteryWidth,batteryHeight], true);
 }
 
-module pilotHole() {
-    cube([1.5,1.5,10],true);
+module hardPoint() {
+    hpHeight = 2;
+    hpBottomRad = 7;
+    hpTopRad = 3;
+    boreDiam =2.5;
+    translate([0,0,hpHeight/2]) difference() {
+        cylinder(hpHeight,hpBottomRad,hpTopRad,true);
+        cylinder(hpHeight*2,boreDiam/2, true);
+    }
+}
+
+module sensorClip() {
+    clipLength = 8.4;
+    clipWidth = 3.2;
+    clipHeight = 14;
+    blockLength = 25;
+    blockWidth = 25;
+    blockHeight = clipHeight + 0.5;
+    
+    difference() {
+        cube([blockLength, blockWidth, blockHeight], true);
+        cube([clipLength - 1.2, clipWidth, blockHeight], true);
+        translate([0,0,0.5]) cube([clipLength, clipWidth, clipHeight], true);
+    }
 }
