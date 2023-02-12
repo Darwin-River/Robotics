@@ -22,11 +22,11 @@ baseLength = batteryLength+15;
 baseHeight = baseLength;
 baseWidth = servoTabLength;
 
-
+$fn = 50; // Set the number of polygon faces.
 
 // Execute
 
-rotate([0,0,0]) difference() {
+rotate([-90,0,0]) difference() {
     union() {
         base();
         translate([0,-baseWidth/2,16]) sphere(9);
@@ -71,7 +71,7 @@ module servoCutout() {
         translate([-wireClearance,0,0]) cube([servoLength, servoWireWidth, servoHeight], true);
         translate([0,0,-(servoHeight+servoTabThickness)/2])
             cube([servoTabLength, servoWidth, servoTabThickness], true);
-        translate([0,0,servoHeight/2])
+        translate([-cylinderLength/2+servoLength/2,0,servoHeight/2])
             rotate([0,90,0])
                 cylinder(h=cylinderLength, r=servoTerminalWidth/2, center=true);
     }
@@ -86,24 +86,9 @@ module hardPoint() {
     hpHeight = 2;
     hpBottomRad = 7;
     hpTopRad = 3;
-    boreDiam =2.5;
+    boreDiam =2;
     translate([0,0,hpHeight/2]) difference() {
         cylinder(hpHeight,hpBottomRad,hpTopRad,true);
         cylinder(hpHeight*2,boreDiam/2, true);
-    }
-}
-
-module sensorClip() {
-    clipLength = 8.4;
-    clipWidth = 3.2;
-    clipHeight = 14;
-    blockLength = 25;
-    blockWidth = 25;
-    blockHeight = clipHeight + 0.5;
-    
-    difference() {
-        cube([blockLength, blockWidth, blockHeight], true);
-        cube([clipLength - 1.2, clipWidth, blockHeight], true);
-        translate([0,0,0.5]) cube([clipLength, clipWidth, clipHeight], true);
     }
 }
