@@ -29,9 +29,9 @@ $fn = 50; // Set the number of polygon faces.
 rotate([-90,0,0]) difference() {
     union() {
         base();
-        translate([0,-baseWidth/2,16]) sphere(9);
-        translate([baseLength/2-20,baseWidth/2-15,baseHeight]) rotate([0,0,0]) hardPoint();
-        translate([-baseLength/2+20,baseWidth/2-15,baseHeight]) rotate([0,0,0]) hardPoint();
+        translate([0,-baseWidth/2,16]) sphere(8);
+        translate([baseLength/2-20,baseWidth/2-8,baseHeight]) rotate([0,0,0]) hardPoint();
+        translate([-baseLength/2+20,baseWidth/2-8,baseHeight]) rotate([0,0,0]) hardPoint();
         translate([0,baseWidth/2-8,baseHeight]) rotate([0,0,0]) hardPoint();
     }
     translate([0,-baseWidth/2+5,baseHeight/2+servoTerminalWidth/2+5]) rotate([90,0,0]) cbCutout();
