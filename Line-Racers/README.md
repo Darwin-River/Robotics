@@ -9,8 +9,8 @@ In this game, line-following robots will race to the ends of twisting lines and 
 * 4 AA batteries
 
 # Tournament rules
-* Bots start at the opposite ends of a symetric maze.
-* The start and finish of the cource will be marked with T intersections.
-* With a clap or whistle sound they start racing to the other end of the curving path.
-* When they reach a T intersection at they will reverse direction and return the way they came.
-* Bots will reverse direction a predertermined number of times per the rules of the specific race.
+* Each bot races on a circular path with various twists and turns.
+* All turns are at right angles.
+* The starting point and lap marker is indicated by a double-thick line crossing the path.
+* The robot must race around the track a set number of times.
+* The direction the robot races is chosen randomly by flipping a coin.
