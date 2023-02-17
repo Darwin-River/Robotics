@@ -10,6 +10,10 @@
 
 UMLIFE 20PCS 5MM LDR Photosensitive Sensor Module Light Dependent Resistor Sensor Module Digital Light Detection LM393 3 pins for Arduino https://www.amazon.com/dp/B09NCXKW9B</Text>
         </Document>
+        <Document ID="4053E088-AB0A-4206-82D4-F04B5FFE360A">
+            <Title>Servo connections</Title>
+            <Text>Connect the right and left servo wires to digital pins two and three respectively.</Text>
+        </Document>
         <Document ID="51E7AD10-2DF7-4D2E-803E-044C63A1EAED">
             <Title>Wire connectors</Title>
             <Text>Wire connectors
@@ -19,10 +23,9 @@ uxcell 10cm 2.54mm 3 Pin Female to Female F/F Jumper Cable Connector 5 Pcs https
         <Document ID="5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080">
             <Title>Microphone</Title>
             <Synopsis>The microphone is required to start the robot</Synopsis>
-            <Text>Microphone
-
-DAOKI 5PCS High Sensitivity Sound Microphone Sensor Detection Module for Arduino AVR PIC https://www.amazon.com/dp/B00XT0PH10</Text>
+            <Text>DAOKI 5PCS High Sensitivity Sound Microphone Sensor Detection Module for Arduino AVR PIC https://www.amazon.com/dp/B00XT0PH10</Text>
         </Document>
+        <Document ID="6BD793E7-9395-4451-9A7F-CD332E92211C"/>
         <Document ID="6DC39BCD-CE2D-4F50-A0D7-F00E9FC4681F"/>
         <Document ID="734A7F42-5490-4AF9-AE5D-4212440E65CC">
             <Title>Battery holder</Title>
@@ -90,6 +93,57 @@ HiLetgo 5pcs Nano I/O Expansion Sensor Shield for Arduino UNO R1 Nano 3.0 Duemil
         </Document>
         <Document ID="D91776D9-4F60-4080-B3BF-8B0A2115E4FA">
             <Title>Rules</Title>
+        </Document>
+        <Document ID="DFDBDDA7-0353-4C3F-B1CE-C7909711C9CB">
+            <Title>Microphone</Title>
+            <Text>The line racer uses a microphone to detect the start whistle and begin it’s run through the racecourse.
+The mic is connected to the Arduino via a three pin connector to digital port 8 and sound is detected as a high or low voltage on the corresponding Arduino pin.
+An adjustable potentiometer on the sensor sets the threshold at which a noise will result in low value being sent to the Arduino.
+Two LEDs on the unit provide a quick visual indicator for when voltage is applied to the sensor and when a sound triggers a voltage drop at the Arduino.
+The following script uses the digitalRead function to detect mic-induced voltage level at pin 8 and send a serial message back to the computer where it can be read on the Arduino IDE.
+
+const int MIC_PIN = 8;
+
+void setup() {
+  Serial.begin(9600);       // use the serial port
+}
+
+void loop() {
+  Serial.println(digitalRead(MIC_PIN));
+}
+
+In the absence of a detectable sound, this code will print a series of ones in the IDE output window.  Provided you have the potentiometer set correctly on the sensor, speaking or clapping will generate a brief stream of zeros to appear on your display.
+It’s possible to improve this routine by having the Arduino count the number of sound ticks over a period time to report the frequency of the incoming sound wave.
+The following program, uses a variable called pulseCount to count the number of audio events over a period of time defined by samplePeriod.  In this example, millis() is a built-in function that reports the current time in milliseconds.
+
+const int MIC_PIN = 8;
+const int samplePeriod = 10; // Milliseconds
+
+unsigned long timeMarker;
+unsigned long currentTime;
+int pulseCount;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  currentTime = millis();
+  
+  if (currentTime-timeMarker &gt; samplePeriod) {
+    Serial.println(pulseCount, DEC);
+    pulseCount = 0;
+    timeMarker = currentTime;
+  }
+  
+  if (digitalRead(MIC_PIN) == LOW) {
+    pulseCount += 1;
+  }
+  
+}
+
+Now when you run the code and speak into the mic, it will display a range of values that indicate the frequency of sound events.</Text>
         </Document>
         <Document ID="E0473435-9477-40EA-8AC1-9534DE8A3E85">
             <Title>Prints</Title>

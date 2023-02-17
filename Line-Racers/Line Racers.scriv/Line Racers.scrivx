@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="1E462B4C-273C-46B5-849D-4062E9F7ED02" Creator="SCRWIN-3.1.4.0" Device="ExMachinis" Modified="2023-02-05 22:01:27 -0500" ModID="BC0E1B74-95EE-41FF-A54E-0B8FA0179463">
+<ScrivenerProject Template="No" Version="2.0" Identifier="1E462B4C-273C-46B5-849D-4062E9F7ED02" Creator="SCRWIN-3.1.4.0" Device="ExMachinis" Modified="2023-02-17 08:12:38 -0500" ModID="7781AB34-2248-4ACA-A3E2-7B68374904AA">
     <Binder>
         <BinderItem UUID="7D3316ED-1F85-4792-A533-B743F80AFB1F" Type="DraftFolder" Created="2023-02-01 18:15:11 -0500" Modified="2023-02-01 18:15:11 -0500">
             <Title>Draft</Title>
@@ -90,13 +90,13 @@
                                 <TextSelection>128,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080" Type="Text" Created="2023-02-02 19:26:15 -0500" Modified="2023-02-04 09:53:50 -0500">
+                        <BinderItem UUID="5F6EEEDD-C02E-4E95-AEEF-F3A8FB318080" Type="Text" Created="2023-02-02 19:26:15 -0500" Modified="2023-02-17 07:04:58 -0500">
                             <Title>Microphone</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>137,0</TextSelection>
+                                <TextSelection>89,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -129,6 +129,25 @@
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
+                    <Children>
+                        <BinderItem UUID="4053E088-AB0A-4206-82D4-F04B5FFE360A" Type="Text" Created="2023-02-15 19:04:49 -0500" Modified="2023-02-15 19:05:51 -0500">
+                            <Title>Servo connections</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>82,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="6BD793E7-9395-4451-9A7F-CD332E92211C" Type="Text" Created="2023-02-15 19:04:49 -0500" Modified="2023-02-15 19:04:49 -0500">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
                 </BinderItem>
                 <BinderItem UUID="9E3CEDD1-0D29-41C1-93F9-DAA7C9700D43" Type="Folder" Created="2023-02-01 18:16:51 -0500" Modified="2023-02-01 18:16:58 -0500">
                     <Title>Codes</Title>
@@ -146,6 +165,15 @@
                             </MetaData>
                             <TextSettings>
                                 <TextSelection>13,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="DFDBDDA7-0353-4C3F-B1CE-C7909711C9CB" Type="Text" Created="2023-02-17 07:05:23 -0500" Modified="2023-02-17 08:11:34 -0500">
+                            <Title>Microphone</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2042,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -239,11 +267,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-02-01 18:15:11 -0500" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="Yes" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="55" Characters="692" Date="2023-02-05 22:01:27 -0500"/>
+        <PreviousSession Words="328" Characters="2086" Date="2023-02-17 08:12:38 -0500"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2023-02-05 00:00:00 -0500">
-        <DraftWordCount>55</DraftWordCount>
-        <DraftCharCount>692</DraftCharCount>
+    <RecentWritingHistory Date="2023-02-17 00:00:00 -0500">
+        <DraftWordCount>328</DraftWordCount>
+        <DraftCharCount>2086</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
