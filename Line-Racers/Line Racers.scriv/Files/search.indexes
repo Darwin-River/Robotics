@@ -143,7 +143,48 @@ void loop() {
   
 }
 
-Now when you run the code and speak into the mic, it will display a range of values that indicate the frequency of sound events.</Text>
+Now when you run the code and speak into the mic, it will display a range of values that indicate the frequency of sound events.
+A variation on the above script uses a boolean variable to track whether or not the robot has registered a sound above a soundThreshold.  Prior to hearing the sound, racing will be false and the robot will continuously listen for the audible start signal.
+After hearing a signal it will start racing and set racing to true.  When racing is set to true, it branches to a new section of code that handles its movement around the track.
+
+// Start racing when I hear a loud noise.
+
+const int MIC_PIN = 8;
+const int samplePeriod = 10; // Milliseconds
+const int soundThreshold = 500;
+
+unsigned long timeMarker;
+unsigned long currentTime;
+int pulseCount;
+bool racing = false;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  if (racing) { // Follow this routine when racing.
+    
+  } else { // Listen for start signal when not racing.
+    currentTime = millis();
+  
+    if (currentTime-timeMarker &gt; samplePeriod) {
+      if (pulseCount &gt; soundThreshold) {
+        Serial.println(&quot;Start racing!&quot;);
+        racing = true;
+      }
+      pulseCount = 0;
+      timeMarker = currentTime;
+    }
+    
+    if (digitalRead(MIC_PIN) == LOW) {
+      pulseCount += 1;
+    }
+  }
+}
+
+The robot won’t resume listening for a sound until the reset button is depressed on the IO board.</Text>
         </Document>
         <Document ID="E0473435-9477-40EA-8AC1-9534DE8A3E85">
             <Title>Prints</Title>
