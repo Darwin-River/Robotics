@@ -1,5 +1,5 @@
 # Welcome
-This is the digital workshop for Tournament Robotics. 
+This is the digital workshop for Tournament Robotics.  Please feel free to browse the content. 
 
 My goal in creating this is to publish games in which players build and program robots that compete with one another in a well defined challenge.
 
