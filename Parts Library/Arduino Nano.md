@@ -1,4 +1,4 @@
-The Arduino Nano is a small, versatile, and highly affordable microcontroller board, which is based on the ATmega328P microprocessor.  The Nano is similar to the Arduino Uno but contained on a much smaller circuit board, making it ideal for use in compact applications.
+<img src="/Images/Arduino_Nano.png" width="200" align="right">The Arduino Nano is a small, versatile, and highly affordable microcontroller board, which is based on the ATmega328P microprocessor.  The Nano is similar to the Arduino Uno but contained on a much smaller circuit board, making it ideal for use in compact applications.
 
 As with the Arduino Uno, the Nano  has 14 digital input/output pins and 8 analog inputs, which make it suitable for use in a wide range of projects. 
 
