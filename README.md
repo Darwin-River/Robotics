@@ -15,3 +15,5 @@ My goal in creating this is to publish games in which players build and program 
 * Line Racers. Two robots race to get to the end of a winding path and back.
 * Sumo Boats. Paddle boats need to push each other out of the arena.
 * Supercomputers. Efficiently code parallel Arduinos to quickly solve a mathematical problem.
+
+Be sure to check out the [Code Library](https://github.com/Darwin-River/Robotics/tree/main/Code%20Library) for useful C++ classes.
