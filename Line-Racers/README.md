@@ -1,16 +1,9 @@
-# Line Racers
-In this game, line-following robots will race to the ends of twisting lines and return, possibly with a block in tow.
+Line Racer is the first of the Tournament Robotics challenge robots that I'll be designing.  In this challenge,  students must program a robot to follow a curving line from beginning to end in a minimal amount of time.
 
-# Robot design
-* Two drive wheels with a ball to complete the tripod.
-* Two downward ficaing light sensors to use for following the line.
-* A mic to hear the start signal -- generally someone blowing a whistle or clapping hands.
-* An Arduino nano with IO shield
-* 4 AA batteries
+The Line Racer Track is constructed by laying out black painter's tape on a white surface according to a set of rules that are described in that section.
 
-# Tournament rules
-* Each bot races on a circular path with various twists and turns.
-* All turns are at right angles.
-* The starting point and lap marker is indicated by a double-thick line crossing the path.
-* The robot must race around the track a set number of times.
-* The direction the robot races is chosen randomly by flipping a coin.
+The tournament rules are detailed under in the Line Racer Rules.
+
+The robot itself consists of two servo-powered wheels, a pair of line-tracking IR sensors, and a microphone, which allows the robot to hear the starting whistle.  All of the robot's components are detailed in the Line Racer Parts.
+
+The 3D printed Line Racer Chassis consists of a single block that holds all of the parts.
