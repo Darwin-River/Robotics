@@ -10,7 +10,7 @@ Furthermore, by requiring that all participants use the same standardized design
 
 My goal is to create a website that contains everything students need to assemble, program, and test their own competition robot, submit the code to a remotely hosted competition, or even host their own event.
 
-Tournament Robotics will introduce readers to the rules, designs, and coding techniques required to participate in a broad range of robotic challenges.  For example, the current [Line-Racer](Line_Racer/README.md) project will soon provide the rules, tools, and instructions necessary to remotely host a Line Racer tournament in which independently programmed robots race to follow a twisting line to the end and back again. 
+Tournament Robotics will introduce readers to the rules, designs, and coding techniques required to participate in a broad range of robotic challenges.  For example, the current [Line-Racer](Line-Racers/README.md) project will soon provide the rules, tools, and instructions necessary to remotely host a Line Racer tournament in which independently programmed robots race to follow a twisting line to the end and back again. 
 
 Subsequent projects will describe competitions involving programmable devices that swing from a wire, battle in a water-filled arena, or race to push balls up a slope.  Each tournament will introduce students to a unique robot design with its own set of coding challenges.
 
