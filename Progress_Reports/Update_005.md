@@ -1,6 +1,6 @@
 # Developing a C++ State Machine Class
 ## Finished Video
-![Finished Video](https://youtu.be/fDkzkp8z66M)
+[Finished Video](https://youtu.be/fDkzkp8z66M)
 ## Description
 Finite state machines are a great way to visualize, code, and troubleshoot complex machine behavior.  I created a simple C++ state machine class to use when developing and testing my tournament Line Racer robot.  This video demos the C++ Mealy State Machine class by using it to code an Arduino traffic light on the Wokwi website.
 
