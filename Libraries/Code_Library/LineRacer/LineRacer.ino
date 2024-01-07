@@ -70,9 +70,11 @@ void setup() {
 void loop() {
   // Log events
   listen.logEvent(MIC, mic.alarm());
+  listen.logEvent(LTA, longTimer.isAlarming());
+
   follow.logEvent(TRU, true);
   follow.logEvent(STA, shortTimer.isAlarming());
-  follow.logEvent(LTA, longTimer.isAlarming());
+ 
   follow.logEvent(LIR, ! leftIR.alarm());
   follow.logEvent(RIR, ! rightIR.alarm());
   
