@@ -1,13 +1,13 @@
-#include "StateMachines.h"
+#include "StateEngine.h"
 
 #define STOPPED  0
 #define STARTING 1
 #define RUNNING  2
 #define STOPPING 3
 
-StateMachines::StateMachines() {}
+StateEngine::StateEngine() {}
 
-void StateMachines::addState(int _machine, int _state, int _trigger, int _trueDestination, int _trueActions, int _falseDestination, int _falseActions)
+void StateEngine::addState(int _machine, int _state, int _trigger, int _trueDestination, int _trueActions, int _falseDestination, int _falseActions)
 {
   if(_machine > machineCount) machineCount = _machine;
   triggers[_machine][_state] = _trigger;
@@ -17,34 +17,34 @@ void StateMachines::addState(int _machine, int _state, int _trigger, int _trueDe
   falseDestinations[_machine][_state] = _falseDestination;
 }
 
-void StateMachines::onStart(int _machine, int _startActions)
+void StateEngine::onStart(int _machine, int _startActions)
 {
   startActions[_machine] = _startActions;
 }
 
-void StateMachines::onStop(int _machine, int _stopActions)
+void StateEngine::onStop(int _machine, int _stopActions)
 {
   stopActions[_machine] = _stopActions;
 }
 
-int StateMachines::createEventHandle()
+int StateEngine::createEventHandle()
 {
   eventCount ++;
   return bit(eventCount - 1);
 }
 
-int StateMachines::createActionHandle()
+int StateEngine::createActionHandle()
 {
   actionCount ++;
   return bit(actionCount - 1);
 }
 
-void StateMachines::logEvent(int _event, bool _status)
+void StateEngine::logEvent(int _event, bool _status)
 {
   if (_status) currentEvents = currentEvents | _event;
 }
 
-void StateMachines::evaluate()
+void StateEngine::evaluate()
 {
   int machine = 0;
   currentActions = 0;
@@ -88,24 +88,24 @@ void StateMachines::evaluate()
   currentEvents = 0;
 } 
 
-void StateMachines::start(int _machine)
+void StateEngine::start(int _machine)
 {
   Serial.println("Told to start.");
   status[_machine] = STARTING;
 }
 
-void StateMachines::stop(int _machine)
+void StateEngine::stop(int _machine)
 {
   Serial.println("Told to stop.");
   status[_machine] = STOPPING;
 }
 
-int StateMachines::getState(int _machine)
+int StateEngine::getState(int _machine)
 {
   return currentState[_machine];
 }
 
-bool StateMachines::request(int _action)
+bool StateEngine::requests(int _action)
 {
   return (currentActions & _action) > 0;
 }

@@ -3,7 +3,7 @@
 #define MAX_MACHINES 5
 #define MAX_STATES 20
 
-class StateMachines
+class StateEngine
 {
   private:
 
@@ -25,7 +25,7 @@ class StateMachines
     int falseDestinations[MAX_MACHINES][MAX_STATES];
  
   public:
-  	StateMachines();
+  	StateEngine();
     void addState(int _SM, int _state, int _trigger, int _trueDestination, int _trueActions, int _falseDestination,  int _falseActions);
     void onStart(int _SM, int _startActions);
     void onStop(int _SM, int _stopActions);
@@ -36,5 +36,5 @@ class StateMachines
     void start(int _SM);
     void stop(int _SM);
     int getState(int _SM);
-    bool request(int _action);
+    bool requests(int _action);
 };
