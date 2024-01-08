@@ -1,4 +1,4 @@
-#include "StateMachine.h"
+#include "StateMachines.h"
 #include "Timer.h"
 #include "Sensor.h"
 #include "Drive.h"
@@ -17,8 +17,8 @@
 #define IR_SAMPLE_THRESHOLD 10
 
 // Create objects
-StateMachine listen; 
-StateMachine follow;
+StateMachines listen; 
+StateMachines follow;
 Timer shortTimer(500);
 Timer longTimer(4000);
 Sensor mic(MIC_PIN, MIC_SAMPLE_PERIOD, MIC_THRESHOLD);
