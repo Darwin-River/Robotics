@@ -5,7 +5,10 @@
 #define RUNNING  2
 #define STOPPING 3
 
-StateEngine::StateEngine() {}
+StateEngine::StateEngine() 
+{
+
+}
 
 void StateEngine::addState(int _machine, int _state, int _trigger, int _trueDestination, int _trueActions, int _falseDestination, int _falseActions)
 {
@@ -50,16 +53,29 @@ void StateEngine::evaluate()
   currentActions = 0;
   do
   {
+    if(debugOn[machine]) 
+    {
+      Serial.print("SM ");
+      Serial.print(machine);
+    }
     switch(status[machine])
     {
       case STARTING:
-        Serial.println("Starting");
+        if(debugOn[machine])
+        {
+          Serial.print(" is starting at state ");
+          Serial.println(currentState[machine]);
+        }
         currentActions = currentActions & startActions[machine];
         currentState[machine] = 0;
         status[machine] = RUNNING;
         break;
       case RUNNING:
-        Serial.println(currentState[machine]);
+        if(debugOn[machine])
+        {
+          Serial.print(" is running at state ");
+          Serial.println(currentState[machine]);
+        }
         if ((triggers[machine][currentState[machine]] & currentEvents) > 0)
         {
           currentActions = currentActions & trueActions[machine][currentState[machine]];
@@ -72,14 +88,18 @@ void StateEngine::evaluate()
         }
         break;
       case STOPPING:
-        Serial.println("Stopping");
+        if(debugOn[machine])
+        {
+          Serial.print(" is stopping at state ");
+          Serial.println(currentState[machine]);
+        }
         status[machine] = STOPPED;
         currentActions = currentActions & stopActions[machine];
         currentState[machine] = 0;
         status[machine] = STOPPED;
         break;
       case STOPPED:
-        // Serial.println("Stopped");
+        if(debugOn[machine]) Serial.println(" is stopped.");
         currentState[machine] = 0;
         break;
     }
@@ -108,4 +128,9 @@ int StateEngine::getState(int _machine)
 bool StateEngine::requests(int _action)
 {
   return (currentActions & _action) > 0;
+}
+
+void StateEngine::debug(int _machine, bool _debugOn)
+{
+  debugOn[_machine] = _debugOn;
 }

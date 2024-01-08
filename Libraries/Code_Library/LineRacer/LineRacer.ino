@@ -68,6 +68,9 @@ void setup() {
 
   // Start the Listen State Machine
   engine.start(LISTEN_SM);
+
+  engine.debug(LISTEN_SM, false);
+  engine.debug(FOLLOW_SM, true);
 }
 
 void loop() {

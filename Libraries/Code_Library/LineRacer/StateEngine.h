@@ -7,6 +7,8 @@ class StateEngine
 {
   private:
 
+    bool debugOn[MAX_MACHINES];
+
     int currentEvents;
   	int currentActions;
     int eventCount;
@@ -24,6 +26,7 @@ class StateEngine
     int trueDestinations[MAX_MACHINES][MAX_STATES];
     int falseDestinations[MAX_MACHINES][MAX_STATES];
  
+    
   public:
   	StateEngine();
     void addState(int _SM, int _state, int _trigger, int _trueDestination, int _trueActions, int _falseDestination,  int _falseActions);
@@ -37,4 +40,5 @@ class StateEngine
     void stop(int _SM);
     int getState(int _SM);
     bool requests(int _action);
+    void debug(int _machine, bool _debugOn);
 };
