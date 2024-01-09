@@ -31,13 +31,14 @@ Drive myDrive;
 
 // Create action handles
 const int NUL = engine.createActionHandle(); // Do nothing
+const int SFL = engine.createActionHandle(); // Start Follow State Machine
 const int PST = engine.createActionHandle(); // Print current state
 const int STS = engine.createActionHandle(); // Set short timer
 const int LTS = engine.createActionHandle(); // Set long timer
 const int LFT = engine.createActionHandle(); // Turn left
 const int RGT = engine.createActionHandle(); // Turn right
 const int STP = engine.createActionHandle(); // Stop motors
-const int SFL = engine.createActionHandle(); // Start Follow State Machine
+
 const int XFL = engine.createActionHandle(); // Stop Follow State Machine
 
 // Create event handles
@@ -68,8 +69,9 @@ void setup() {
 
   // Start the Listen State Machine
   engine.start(LISTEN_SM);
+  //engine.start(FOLLOW_SM);
 
-  engine.debug(LISTEN_SM, false);
+  engine.debug(LISTEN_SM, true);
   engine.debug(FOLLOW_SM, true);
 }
 
