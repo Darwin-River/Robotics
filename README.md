@@ -14,4 +14,4 @@ Tournament Robotics will introduce readers to the rules, designs, and coding tec
 
 Subsequent projects will describe competitions involving programmable devices that swing from a wire, battle in a water-filled arena, or race to push balls up a slope.  Each tournament will introduce students to a unique robot design with its own set of coding challenges.
 
-Be sure to check out the [Code Library](/Code_Library) for useful C++ classes.
+Be sure to check out the [Code Library](/Libraries/Code_Library) for useful C++ classes.
