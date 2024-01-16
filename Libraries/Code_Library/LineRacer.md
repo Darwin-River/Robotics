@@ -37,42 +37,30 @@ This sketch uses both Listen and Follow state machines.
 The Listen state machine encodes a simple timer that controls when the Follow state machine starts and stops.  At a later point, I'll modify this SM so that it responds to audio ques from an onboard mic.
 
 ```mermaid
----
-title: Listen State Machine
----
 stateDiagram-v2
-0: (0) TRU
-0-->1: [T] LTS + SFL
-0-->0: [F] NUL
+    direction LR
+    [*] --> Follow: LTS+SFL
+    Follow --> [*]: NUL
 
-1: (1) LTA
-1-->2: [T] XFL
-1-->1: [F] NUL
-
-2: (2) TRU
-2-->2: [T] NUL
-2-->2: [F] NUL
+    state Follow {
+        direction TB
+        0: (0) TRU
+        0-->1: [T] LTS + SFL
+        0-->0: [F] NUL
+        
+        1: (1) LTA
+        1-->2: [T] XFL
+        1-->1: [F] NUL
+        
+        2: (2) TRU
+        2-->2: [T] NUL
+        2-->2: [F] NUL
+    }
 ```
 #### The Follow State Machine
 The Follow state machine will eventually use a pair of pair of IR sensors to help the robot follow a black line.  Right now, it simply alternates between running the left and right servo motors until it is shut down by the Listen SM.
 
-```mermaid
----
-title: Follow State Machine
----
-stateDiagram-v2
-0: (0) TRU
-0-->1: [T] LTS + SFL
-0-->0: [F] NUL
 
-1: (1) LTA
-1-->2: [T] XFL
-1-->1: [F] NUL
-
-2: (2) TRU
-2-->3: [T] NUL
-2-->2: [F] NUL
-```
 
 ## StateEngine Class
 
