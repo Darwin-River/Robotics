@@ -3,10 +3,6 @@
 #include "Sensor.h"
 #include "Drive.h"
 
-// State Machines
-#define LISTEN_SM 0
-#define FOLLOW_SM 1
-
 // Connections
 #define LEFT_SERVO_PIN 10
 #define RIGHT_SERVO_PIN 9
@@ -28,6 +24,10 @@ Sensor mic(MIC_PIN, MIC_SAMPLE_PERIOD, MIC_THRESHOLD);
 Sensor leftIR(LEFT_IR_PIN, IR_SAMPLE_PERIOD, IR_SAMPLE_THRESHOLD);
 Sensor rightIR(RIGHT_IR_PIN, IR_SAMPLE_PERIOD, IR_SAMPLE_THRESHOLD);
 Drive myDrive;
+
+// Create machine handles
+const int LISTEN_SM = engine.createMachineHandle();
+const int FOLLOW_SM = engine.createMachineHandle();
 
 // Create action handles
 const int NUL = engine.createActionHandle(); // Do nothing
@@ -60,7 +60,6 @@ void setup() {
   engine.addState(LISTEN_SM, 0, LTA, 1, XFL, 0, NUL);
   engine.addState(LISTEN_SM, 1, TRU, 1, NUL, 1, NUL);
 
-   
   // Construct Follow State Machine
   engine.onStart(FOLLOW_SM, STS + RGT);
   engine.onStop(FOLLOW_SM, STP);

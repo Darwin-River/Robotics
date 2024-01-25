@@ -30,6 +30,12 @@ void StateEngine::onStop(int _machine, int _stopActions)
   stopActions[_machine] = _stopActions;
 }
 
+int StateEngine::createMachineHandle()
+{
+  machineCount ++;
+  return bit(machineCount - 1);
+}
+
 int StateEngine::createEventHandle()
 {
   eventCount ++;

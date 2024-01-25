@@ -11,9 +11,9 @@ class StateEngine
 
     int currentEvents;
   	int currentActions;
+    int machineCount;
     int eventCount;
     int actionCount;
-    int machineCount;
 
     int status[MAX_MACHINES];
   	int currentState[MAX_MACHINES];
@@ -32,6 +32,7 @@ class StateEngine
     void addState(int _SM, int _state, int _trigger, int _trueDestination, int _trueActions, int _falseDestination,  int _falseActions);
     void onStart(int _SM, int _startActions);
     void onStop(int _SM, int _stopActions);
+    int createMachineHandle();
     int createEventHandle();
     int createActionHandle(); 
     void logEvent(int _event, bool _status);
