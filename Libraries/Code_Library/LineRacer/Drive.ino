@@ -4,9 +4,17 @@
 #define SERVO_SPEED 90
 #define SERVO_STOP 91
 
-
+/**
+ * Creates a new object to manuever the robot by controling a pair of servos 
+ * on either side of the robot.
+*/
 Drive::Drive() {}
 
+/**
+ * Specifies how the servos are attached to the Arduino controller.
+ * @param _leftPin The pin number that connects to the left servo.
+ * @param _rightPin The pin number that connects to the right servo.
+*/
 void Drive::attach(int _leftPin, int _rightPin)
 {
   rightServo.attach(_rightPin);
@@ -23,6 +31,10 @@ void Drive::forward(float _speed)
   leftServo.write(leftServoFwd);
 }
 
+/**
+ * Robot starts movin in reverse.
+ * @param _speed Sets the speeds of the motors.
+*/
 void Drive::reverse(float _speed)
 {
   if (_speed > 1.0) _speed = 1.0;
@@ -34,6 +46,10 @@ void Drive::reverse(float _speed)
   leftServo.write(leftServoRev);
 }
 
+/**
+ * Robot starts pivoting to the left.
+ * @param _speed Sets the speeds of the motors.
+*/
 void Drive::left(float _speed)
 {
   if (_speed > 1.0) _speed = 1.0;
@@ -43,6 +59,10 @@ void Drive::left(float _speed)
   leftServo.write(SERVO_STOP - SERVO_SPEED * _speed);
 }
 
+/**
+ * Robot starts pivoting to the right.
+ * @param _speed Sets the speeds of the motors.
+*/
 void Drive::right(float _speed)
 {
   if (_speed > 1.0) _speed = 1.0;
@@ -54,6 +74,9 @@ void Drive::right(float _speed)
   leftServo.write(leftServoFwd);
 }
 
+/**
+ * Stops the motors.
+*/
 void Drive::stop()
 {
   rightServo.write(SERVO_STOP);
