@@ -9,9 +9,13 @@ Although the rules for the state machines are quite simple, states can be linked
 When using the StateEngine class in your robot code,  you first need to create a StateEngine object by invocing the constructor fungion: `engine = StateEngine();`
 
 ## Creating the event and action handles
-Next, you need to create a series of event and action handles via the `createEventHandle()` and `createActionHandle()` functions.  These functions do not take any arguments.  However they return an integer number that needs to be assigned to a constant and used to reference the events and actions in your code.
+Next, you need to create a series of state machine, event, and action handles via the `createMachineHandle()`, `createEventHandle()` and `createActionHandle()` functions.  These functions do not take any arguments.  However they return a unique integer number that needs to be assigned to a constant and used to reference the events and actions in your code.
 
 ```C++
+// Create machine handles
+const int LISTEN_SM = engine.createMachineHandle();
+const int FOLLOW_SM = engine.createMachineHandle();
+
 // Create action handles
 const int NUL = engine.createActionHandle(); // Do nothing
 const int SFL = engine.createActionHandle(); // Start Follow State Machine
@@ -34,7 +38,7 @@ const int MIC = engine.createEventHandle(); // MIC Alarm
 ## Designing the individual state machines
 The StateEngine is capable of managaging multiple state machines that are running in parallel to make use of the previously defined events and actions.  
 
-Each state machine has it's own start and stop actions which are defined using the `onStart()` and `onStop()` functions.  Each of these functions accepts an integer ID for the affected state machine and an integer sum of all the actions that are performned byt the state machnine when it receives a start or stop command.
+Each state machine has it's own start and stop actions, which are defined using the `onStart()` and `onStop()` functions.  Each of these functions accepts an integer ID for the affected state machine and an integer sum of all the actions that are performned byt the state machnine when it receives a start or stop command.
 
 Additionally, you need to use the `addState()` function to define each of the states in the state machine, starting with state 0. The state machine expects the following parameters in the order that they're listed here:
 - __State Machine ID (int).__ This is the ID of the affected state machin.
@@ -44,7 +48,7 @@ Additionally, you need to use the `addState()` function to define each of the st
 - __False Destintation (int).__  This is the state that the state machine will progres to if the event is false.
 - __False Actions (int).__  This is the sum of the action handles that the state machine will invoke as it passes to the new state.
 
-Here is an example of how two state engines are set up using the `onStart()`, `onStop()`, and `addState()` functions:
+Here's an example of how two state engines are set up using the `onStart()`, `onStop()`, and `addState()` functions:
 ```C++
   // Construct Listen State Machine
   engine.onStart(LISTEN_SM, LTS+SFL);
